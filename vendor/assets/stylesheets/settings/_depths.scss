@@ -1,0 +1,26 @@
+
+@mixin depth($x, $y, $color: rgba(37, 39, 41, 0.12)) {
+  box-shadow: 0 $x $y $color;
+}
+
+
+.depth-1 {
+  @include depth(3px, 6px);
+  &--with-border{
+    border: 1px solid rgba(37, 39, 41, 0.2);
+  }
+}
+
+.depth-2 {
+  @include depth(6px, 14px);
+  &--with-border{
+    border: 1px solid rgba(37, 39, 41, 0.2);
+  }
+}
+
+.depth-3 {
+  @include depth(10px, 32px);
+  &--with-border{
+    border: 1px solid rgba(37, 39, 41, 0.2);
+  }
+}

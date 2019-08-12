@@ -1,0 +1,115 @@
+.button{
+  -webkit-appearance: none;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+  transition: background .2s ease;
+  text-align: center;
+  width: 100%;
+ &:hover, &:focus{
+   text-decoration: none;
+ }
+}
+@media screen and (min-width: 768px) {
+  .button--nav {
+    margin: 0;
+    display: inline !important;
+    position: relative !important;
+    top: 15px;
+    padding: 10px !important;
+  }
+}
+.button--nav{
+  margin-right: 10px;
+}
+
+.button--centerd{
+  margin: 0 auto;
+}
+
+.button--primary-blue{
+  @include button--primary($n-hedgeye-blue, white);
+}
+
+.button--primary-green{
+  @include button--primary($hedgeye-green, white);
+}
+
+.button--primary-dark{
+  @include button--primary($hedgeye-charcoal, white);
+}
+
+.button--primary-red{
+  @include button--primary($hedgeye-red, white);
+}
+
+.button--primary-img{
+  @include button--primary($hedgeye-gray, $hedgeye-charcoal);
+}
+
+.button--primary-disabled{
+  @include button--disabled(#EAEFF2, #9B9B9B);
+  cursor: not-allowed !important;
+}
+
+.button--secondary-blue{
+  @include button--secondary($n-hedgeye-blue, white);
+}
+
+.button--secondary-green{
+  @include button--secondary($hedgeye-green, white);
+}
+
+.button--secondary-dark{
+  @include button--secondary($hedgeye-charcoal, white);
+}
+
+.button--secondary-red{
+  @include button--secondary($hedgeye-red, white);
+}
+
+.button--secondary-img{
+  @include button--secondary($hedgeye-gray, $hedgeye-charcoal);
+}
+
+.button--secondary-gold{
+  @include button--secondary(#F5DC6D, $hedgeye-charcoal);
+}
+.button--secondary-orange{
+  @include button--secondary(#F4932F, white);
+}
+
+.button--secondary-disabled{
+  @include button--secondary(#EAEFF2, #9B9B9B);
+  cursor: not-allowed;
+}
+
+.button--ghost-blue{
+  @include button--ghost($n-hedgeye-blue, white);
+}
+
+.button--ghost-green{
+  @include button--ghost($hedgeye-green, white);
+}
+
+.button--ghost-dark{
+  @include button--ghost($hedgeye-charcoal, white);
+}
+
+.button--ghost-red{
+  @include button--ghost($hedgeye-red, white);
+}
+
+.button--ghost-img{
+  @include button--ghost(#F3F3F3, black);
+}
+
+.button--ghost-disabled{
+  @include button--ghost(#EAEFF2, black);
+  cursor: not-allowed;
+}

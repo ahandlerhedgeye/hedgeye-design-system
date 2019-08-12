@@ -1,0 +1,51 @@
+$font-stack: 'Karla', sans-serif;
+
+$base-font-size: 16px;
+
+@mixin standard-font-style($size-multiplier, $font-weight: 500, $margin: 0, $color: $charcoal) {
+  font-family: $font-stack;
+  font-size: $base-font-size * $size-multiplier;
+  font-weight: $font-weight;
+  line-height: 1.5;
+  color: $color;
+  margin: $base-space * $margin 0;
+}
+
+
+html{
+  font-family: $font-stack;
+  font-size: $base-font-size;
+  line-height: 1.5;
+}
+
+h1,
+.heading-1 {
+  @include standard-font-style(3, 700, 2.5);
+}
+
+h2,
+.heading-2 {
+  @include standard-font-style(2, 500, 2);
+}
+
+h3,
+.heading-3 {
+  @include standard-font-style(1.5, 500, 1.5);
+}
+
+h4,
+.heading-4,
+.sub-heading {
+  @include standard-font-style(1.13, 700, 0, $lapis-blue);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p,
+.copy-text {
+  @include standard-font-style(1, 500, 1);
+}
+p.large,
+.copy-text--large{
+  @include standard-font-style(1.15, 500, 1);
+}

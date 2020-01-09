@@ -58,7 +58,7 @@
 }
 
 .button--secondary-blue{
-  @include button--secondary($n-hedgeye-blue, white);
+  @include button--secondary($hedgeye-blue, white);
 }
 
 .button--secondary-green{

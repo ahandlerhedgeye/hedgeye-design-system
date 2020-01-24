@@ -11,6 +11,9 @@
   @import "settings/type";
   font-family: 'Karla', sans-serif;
   @import "components/cards";
+  @import 'compnents/navigation';
+  @import 'components/table';
+  @import 'components/dropdown';
 
   .section-head{
     color: #929AA5;

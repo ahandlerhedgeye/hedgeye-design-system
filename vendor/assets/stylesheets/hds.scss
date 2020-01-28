@@ -4,6 +4,7 @@
 
 .hds{
   all: unset; /* Forgive me god */
+  @import 'settings/gen_variables';
   @import 'settings/grid';
   @import "settings/colors";
   @import 'settings/depths';
